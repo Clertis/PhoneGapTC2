@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+    <title>Ticket Car Mobile - Meus Serviços</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="css/jquery.mobile.theme-1.4.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.icons-1.4.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet" type="text/css" />
+        
+    <link href="css/message.boxes.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
+    <script src="js/mobile.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div data-role="page" id="page1" data-dom-cache="false" data-theme="c">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="camera.html" data-direction="reverse" data-transition="slide" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">Tirar Foto</a>
+        <a data-role="button" href="index.html" data-icon="delete" data-iconpos="left" class="ui-btn-right">Sair</a>
+        <h3>
+            Meus Servi&ccedil;os
+        </h3>
+    </div>
+    <div data-role="content">
+
+        <ul data-role="listview" data-filter-placeholder="Buscar: placa, solic., modelo" data-filter="true" data-inset="true">
+            <li data-role="list-divider" role="heading" data-theme="b">
+                Solicita&ccedil;&otilde;es Pendentes
+            </li>          
+                    <li>
+                        <a data-transition="slide" href="Solicitacao.html?Sol=861335">
+                            <h3 style='overflow: hide;'>JUO-9285 CAMARO AMARELO</h3>
+                            <span class='ui-li-count'>1</span>
+                            <p><strong>Solicita&ccedil;&atilde;o 861335</strong></p>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a data-transition="slide" href="Solicitacao.aspx?Sol=861303">
+                            <h3 style='overflow: hide;'>JXR-4806 206</h3>
+                            <span class='ui-li-count'>1</span>
+                            <p><strong>Solicita&ccedil;&atilde;o 861303</strong></p>
+                        </a>
+                    </li>-->
+          </ul>
+            <!--<div class="info">
+                Voc&ecirc; n&atilde;o possui or&ccedil;amentos para aprova&ccedil;&atilde;o ou n&atilde;o possui acesso a base contratante de manuten&ccedil;&atilde;o avan&ccedil;ada.
+           </div>-->
+    </div>
+</div>
+
+</body>
