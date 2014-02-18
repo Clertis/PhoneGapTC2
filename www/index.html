@@ -1,12 +1,60 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
 <head>
     <title>Ticket Car Mobile</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/jquery.mobile.theme-1.4.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.icons-1.4.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet" type="text/css" />
+        
+    <link href="css/message.boxes.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
+    <script src="js/mobile.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <button id="btnLogin" name="btnLogin" value="Login" onclick="Login();" />
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="content">
+            <form id="formLogin" name="formLogin" runat="server" data-ajax="false">
+                <div class="center-wrapper">
+                    <img src="img/logo-ticket.png" />
+                </div>
+                    <!--<% if (!String.IsNullOrEmpty(mensagem)) { %>
+                        <div class="error">
+                            <%= mensagem %>
+                        </div>
+                    <% } %>-->
+                <div data-role="fieldcontain">
+                    <fieldset data-role="usuario">
+                        <label for="Usu&aacute;rio:" style="display:block">Usu&aacute;rio:</label>
+                        <input id="txtUsuario" name="txtUsuario" type="text" maxlength="100" title="" placeholder="Digite seu código de usuário" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="senha">
+                        <label for="Senha">Senha:</label>
+                        <input id="Text1" name="txtSenha" type="password" maxlength="100" title="" placeholder="Digite sua senha" />
+                    </fieldset>
+                </div>
+                
+                <!--<% if (Session["tentativas"] != null) { %>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="captcha">
+                        <label style="display:block">Digite o conte&uacute;do da imagem:</label>
+                        <asp:TextBox ID="txtCaptcha" runat="server" MaxLength="10"></asp:TextBox>
+                        <asp:Image ID="imgCaptcha" ImageUrl="~/Captcha.aspx" runat="server" />
+                    </fieldset>
+                </div>
+                <% } %>-->
+                
+                <input type="button" id="btnLogin" name="btnLogin" value="Login" data-icon="check" data-iconpos="left" onclick="Login();" />
+            </form>
+        </div>
+    </div>
 </body>
-<html>
+
 <script type="text/javascript">
 
     function Login() {
