@@ -49,10 +49,10 @@ var app = {
 
     takePicture: function() {
       navigator.camera.getPicture( function( imageURI ) {
-        //alert( imageURI );
-		var smallImage = document.getElementById('smallImage');
-		smallImage.style.display = 'block';
-		smallImage.src = "data:image/jpeg;base64," + imageURI;
+        alert( imageURI );
+		var largeImage = document.getElementById('largeImage');
+		largeImage.style.display = 'block';
+		largeImage.src = "data:image/jpeg;base64," + imageURI;
 		
       },
       function( message ) {
@@ -60,7 +60,7 @@ var app = {
       },
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI
+        destinationType: Camera.DestinationType.DATA_URL
       });
     }
 };
