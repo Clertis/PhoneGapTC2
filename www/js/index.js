@@ -49,10 +49,13 @@ var app = {
 
     takePicture: function() {
       navigator.camera.getPicture( function( imageURI ) {
-        alert( imageURI );
 		var largeImage = document.getElementById('largeImage');
 		largeImage.style.display = 'block';
 		largeImage.src = "data:image/jpeg;base64," + imageURI;
+		
+		var smallImage = document.getElementById('smallImage');
+		smallImage.style.display = 'block';
+		smallImage.src = "data:image/jpeg;base64," + imageURI;
 		
       },
       function( message ) {
